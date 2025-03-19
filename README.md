@@ -1,5 +1,4 @@
-Desenvolvedores:
-Angela Afonso RA: 24000777-2
+
 Geovane Julio RA: 24000713-2
 
 # SweetDreams
@@ -35,8 +34,7 @@ cacau).
 ## Tecnologias Utilizadas
 - HTML: Estrutura da página
 - CSS: Estilização e layout responsivo
-- JavaScript: Funcionalidade interativa
-
+- JavaScript: Funcionalidade interativa e adaptativas
 
 ## Funcionalidades
 - Exibição dos produtos com nome, descrição, preço e imagem
