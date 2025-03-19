@@ -1,0 +1,299 @@
+:root{
+    --color1: #815330;
+    --color2: #F8C8DC;
+    --color3: #f4f4f4;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bubbler one";
+    color: var(--color1);
+}
+
+header{
+    background-color: var(--color3);
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: right;
+    padding: 0vw 30px;
+    box-sizing: border-box;
+    font-size: 1.6vw;
+    font-weight: 600;
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+header ul{
+    display: flex;
+    gap: 5vw;
+    list-style: none;
+}
+
+header ul a{
+    text-decoration: none;
+    color: var(--color1)
+}
+
+header ul li:hover{
+    transform: translateY(-5px);
+    transition-duration: 0.5s;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*------------BANNER--------------------*/
+.banner-section{
+    background-image: url(./img/banner.svg);
+    background-size: 100% auto;
+    height: 50vw;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 5vw 0;
+}
+
+/*------------CATEGORIAS--------------------*/
+
+.categories-section h2{
+    color: var(--color1);
+}
+
+.categories-section{
+    text-align: center;
+    font-size: 3vw;
+    padding-bottom: 5vw;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.container{
+    height: 30vw;
+    background-color: var(--color2);
+    width: 20vw;
+    border: var(--color1) solid 2px;
+    border-radius: 20px;
+    margin: 2vw 0vw;
+}
+
+.container button{
+    background-color: var(--color1);
+    border: none;
+    color: var(--color3);
+    padding: 1vw;
+    border-radius: 2vw;
+    font-size: 1vw;
+}
+
+.container button:hover{
+    transform: translateY(-5px);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.container:hover{
+    transform: translateY(-7px);
+    transition-duration: 0.5s;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
+}
+
+.container img{
+    width: 20vw;
+    border-radius: 20px;
+}
+
+.container p{
+    font-size: 1.5vw;
+    margin: 0;
+}
+
+.container span{
+    font-size: 2.5vw;
+}
+
+.container h5{
+    font-size: 2.4vw;
+    margin: 0;
+}
+
+.categories-line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#lista-pedido li{
+    margin-top: 2vw;
+}
+
+/*------------PEDIDO--------------------*/
+#pedido{
+    background-color: var(--color3);
+    padding: 3rem;
+    border-radius: 2vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2vw;
+    margin: 0vw 30vw 8vw 30vw;
+    line-height: 1vw;
+}
+
+#lista-pedido{
+    list-style: none;
+    padding: 0;
+}
+
+#finalizar-pedido{
+    background-color: var(--color1);
+    color: var(--color3);
+    font-size: 1.3vw;
+    border-radius: 1vw;
+    padding: 0.6vw 1.5vw;
+    border: none;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+}
+
+#finalizar-pedido:hover{
+    transform: translateY(-5px);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+/*------------FOOTER--------------------*/
+footer{
+    background-color: var(--color1);
+    color: var(--color3);
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 0.2vw 0vw;
+}
+
+/*------------RESPONSIVIDADE--------------------*/
+
+
+@media screen and (max-width: 800px){
+   header{
+    font-size: 3vw;
+    justify-content: center;
+   }
+
+   .banner-section{
+    background-size: 100%;
+    }
+
+    .container{
+        height: 50vw;
+        width: 30vw;
+    }
+
+    .container img{
+        width: 30vw;
+    }
+    
+    .container p{
+        font-size: 2.5vw;
+        margin: 0;
+    }
+    
+    .container span{
+        font-size: 3vw;
+    }
+    
+    .container h5{
+        font-size: 4vw;
+        margin: 0;
+    }
+
+    .container button{
+        padding: 1vw;
+        border-radius: 2vw;
+        font-size: 2vw;
+        margin-top: 1vw;
+    }
+
+    .categories-section h2{
+        font-size: 6vw;
+    }
+
+    footer{
+        font-size: 3vw;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    header{
+     font-size: 5vw;
+    }
+
+    .banner-section{
+        background-size: 130%;
+        height: 65vw;
+        background-position: -20vw 0vw;
+    }
+
+    .categories-line{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10vw;
+    }
+
+    .container{
+        height: 72vw;
+        width: 50vw;
+    }
+
+    .container img{
+        width: 50vw;
+    }
+
+    .container p{
+        font-size: 4vw;
+        margin: 0;
+    }
+    
+    .container span{
+        font-size: 6vw;
+    }
+    
+    .container h5{
+        font-size: 6vw;
+        margin: 0;
+    }
+
+    .container button{
+        padding: 1vw;
+        border-radius: 2vw;
+        font-size: 3vw;
+        margin-top: 1vw;
+    }
+
+
+    .categories-section h2{
+        font-size: 10vw;
+    }
+
+    footer{
+        font-size: 4vw;
+    }
+ }
+
+@media screen and (max-width: 400px){
+    header{
+     font-size: 5vw;
+    }
+
+    .banner-section{
+        background-size: 140%;
+        height: 60vw;
+        background-position: -20vw 0vw;
+    }
+ }
